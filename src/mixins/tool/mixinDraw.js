@@ -134,9 +134,9 @@ const methods = {
     var pick1 = new Cesium.Cartesian2(movement.position);
 
     var cartesian = viewer.scene.globe.pick(viewer.camera.getPickRay(pick1), viewer.scene)
-    if (!Cesium.defined(cartesian)) {
-      return
-    }
+    // if (!Cesium.defined(cartesian)) {
+    //   return
+    // }
     const nIndex = polylines.length - 1
     const polyline = polylines[nIndex]
     polyline.positions.push(cartesian)
@@ -152,9 +152,9 @@ const methods = {
     var pick1 = new Cesium.Cartesian2(movement.endPosition);
 
     var cartesian = viewer.scene.globe.pick(viewer.camera.getPickRay(pick1), viewer.scene)
-    if (!Cesium.defined(cartesian)) {
-      return
-    }
+    // if (!Cesium.defined(cartesian)) {
+    //   return
+    // }
 
     this.tooltipPosition = cartesian
     this.tooltip = this.$vc.lang.draw.drawingTip1
@@ -202,9 +202,9 @@ const methods = {
     var pick1 = new Cesium.Cartesian2(movement.position);
 
     var cartesian = viewer.scene.globe.pick(viewer.camera.getPickRay(pick1), viewer.scene)
-    if (!Cesium.defined(cartesian)) {
-      return
-    }
+    // if (!Cesium.defined(cartesian)) {
+    //   return
+    // }
     if (!this.editingPoint) {
       if (polyline.positions.length > 1) {
         polyline.positions.pop()

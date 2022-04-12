@@ -1,0 +1,1 @@
+{"version":3,"file":"mixinBox.js","sources":["src/mixins/graphics/mixinBox.js"],"sourcesContent":["import { dimensions } from '../mixinProps'\n\n/**\n * vc-graphics-box base props mixins\n */\nexport default {\n  mixins: [dimensions]\n}\n"],"names":["mixins","dimensions"],"mappings":";;;;;;;;;;;;;AAEA;AACA;AACA;;AACA,eAAe;AACbA,EAAAA,MAAM,EAAE,CAACC,UAAD;AADK,CAAf;;;;"}
